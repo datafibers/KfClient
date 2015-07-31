@@ -1,9 +1,9 @@
-package com.netease.middleward.kfclient.producer;
+package com.netease.middleware.kfclient.producer;
 
-import static com.netease.middleward.kfclient.producer.Constants.DEFAULT_SERIALIZER_CLASS;
-import static com.netease.middleward.kfclient.producer.Constants.METADATE_BROKER_LIST;
-import static com.netease.middleward.kfclient.producer.Constants.REQUEST_REQUIRED_ACKS;
-import static com.netease.middleward.kfclient.producer.Constants.SERIALIZER_CLASS;
+import static com.netease.middleware.kfclient.producer.Constants.DEFAULT_SERIALIZER_CLASS;
+import static com.netease.middleware.kfclient.producer.Constants.METADATE_BROKER_LIST;
+import static com.netease.middleware.kfclient.producer.Constants.REQUEST_REQUIRED_ACKS;
+import static com.netease.middleware.kfclient.producer.Constants.SERIALIZER_CLASS;
 
 import java.util.List;
 import java.util.Properties;
@@ -31,7 +31,7 @@ public class KfProducer {
         props.put(METADATE_BROKER_LIST, "kafka.dianshang.163.com:9093,kafka.dianshang.163.com:9094,kafka.dianshang.163.com:9095");
         props.put(REQUEST_REQUIRED_ACKS, "1");
         ProducerConfig producerConfig = new ProducerConfig(props);
-        producer = new Producer<>(producerConfig);
+        producer = new Producer<Integer,String>(producerConfig);
     }
     
     public void sendMsg(final String topic, final String msg) {

@@ -1,4 +1,4 @@
-package com.netease.middleward.kfclient.consumer;
+package com.netease.middleware.kfclient.consumer;
 
 import java.util.List;
 import java.util.Map;
@@ -19,7 +19,7 @@ import kafka.message.MessageAndMetadata;
  * @author bjpengpeng
  * @date 2015年7月28日
  */
-public class KfConsumer {
+public class KfConsumer implements IConsumer{
     
     private ConsumerConnector consumer = null;
     
