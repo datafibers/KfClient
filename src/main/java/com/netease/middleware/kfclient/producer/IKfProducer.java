@@ -7,7 +7,7 @@ import java.util.List;
  * @author bjpengpeng
  * @date 2015年7月28日
  */
-public interface IProducer {
+public interface IKfProducer {
     
     /**
      * @date 2015年7月28日

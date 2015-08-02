@@ -19,7 +19,7 @@ import kafka.message.MessageAndMetadata;
  * @author bjpengpeng
  * @date 2015年7月28日
  */
-public class KfConsumer implements IConsumer{
+public class KfConsumer implements IKfConsumer{
     
     private ConsumerConnector consumer = null;
     

@@ -5,7 +5,7 @@ package com.netease.middleware.kfclient.consumer;
  * @author bjpengpeng
  * @date 2015年7月31日
  */
-public interface IConsumer {
+public interface IKfConsumer {
     
     /**
      * 对某一主题进行continuous订阅

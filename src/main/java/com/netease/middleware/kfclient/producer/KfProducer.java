@@ -28,7 +28,7 @@ public class KfProducer {
     
     public KfProducer() {
         props.put(SERIALIZER_CLASS, DEFAULT_SERIALIZER_CLASS);
-        props.put(METADATE_BROKER_LIST, "kafka.dianshang.163.com:9093,kafka.dianshang.163.com:9094,kafka.dianshang.163.com:9095");
+        props.put(METADATE_BROKER_LIST, "181.92.243.114:9092");
         props.put(REQUEST_REQUIRED_ACKS, "1");
         ProducerConfig producerConfig = new ProducerConfig(props);
         producer = new Producer<Integer,String>(producerConfig);
@@ -105,43 +105,8 @@ public class KfProducer {
     
     public static void main(String[] args) {
         KfProducer producer = new KfProducer();
-        producer.sendMsg("jipiao_topic", "jipiao test1!");
-        producer.sendMsg("jipiao_topic", "jipiao test2!");
-        producer.sendMsg("jipiao_topic", "jipiao test3!");
-        //查看主题
-//        String[] options = new String[]{  
-//                "--list",  
-//                "--zookeeper",  
-//                "127.0.0.1:2182"  
-//            };
-        //查看指定主题 
-          String[] options = new String[]{  
-          "--describe",  
-          "--zookeeper",  
-          "127.0.0.1:2182",
-          "--topic",
-          "jipiao_topic"
-          };     
-        //删除主题 
-//            String[] options = new String[]{  
-//                    "--delete",
-//                    "--zookeeper",  
-//                    "127.0.0.1:2182", 
-//                    "--topic",  
-//                    "jipiao_topic"  
-//            };
-        //创建主题
-//            String[] options = new String[]{  
-//            "--create",  
-//            "--zookeeper",  
-//            "127.0.0.1:2182",  
-//            "--partitions",  
-//            "3",  
-//            "--topic",  
-//            "jipiao_topic",  
-//            "--replication-factor",  
-//            "2" 
-//            };
-    TopicCommand.main(options); 
+        producer.sendMsg("jipiao_test2", "jipiao test1!");
+        producer.sendMsg("jipiao_test2", "jipiao test2!");
+        producer.sendMsg("jipiao_test2", "jipiao test3!");
     }
 }
