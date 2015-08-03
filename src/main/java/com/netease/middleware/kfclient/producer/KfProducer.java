@@ -8,7 +8,6 @@ import static com.netease.middleware.kfclient.producer.Constants.SERIALIZER_CLAS
 import java.util.List;
 import java.util.Properties;
 
-import kafka.admin.TopicCommand;
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
@@ -28,7 +27,7 @@ public class KfProducer {
     
     public KfProducer() {
         props.put(SERIALIZER_CLASS, DEFAULT_SERIALIZER_CLASS);
-        props.put(METADATE_BROKER_LIST, "181.92.243.114:9092");
+        props.put(METADATE_BROKER_LIST, "kafka.dianshang.163.com:9093,kafka.dianshang.163.com:9094,kafka.dianshang.163.com:9095");
         props.put(REQUEST_REQUIRED_ACKS, "1");
         ProducerConfig producerConfig = new ProducerConfig(props);
         producer = new Producer<Integer,String>(producerConfig);
@@ -42,9 +41,6 @@ public class KfProducer {
             throw new NullPointerException("kfclient instance produce failed!");
         }
         producer.send(new KeyedMessage<Integer, String>(topic, msg));
-//        if (null != producer) {
-//            producer.close();
-//        }
     }
     
     private List<KeyedMessage<Integer, String>> encapsulateKeyedMessages(final String topic, final String ...msgs) {
@@ -70,9 +66,6 @@ public class KfProducer {
         if (null != keyedMsgs) {
             producer.send(keyedMsgs);
         }
-//        if (null != producer) {
-//            producer.close();
-//        }
     }
     
     private List<KeyedMessage<Integer, String>> encapsulateKeyedMessages(final String topic, final List<String> msgs) {
@@ -98,15 +91,12 @@ public class KfProducer {
         if (null != keyedMsgs) {
             producer.send(keyedMsgs);
         }
-//        if (null != producer) {
-//            producer.close();
-//        }
     }
     
     public static void main(String[] args) {
         KfProducer producer = new KfProducer();
-        producer.sendMsg("jipiao_test2", "jipiao test1!");
-        producer.sendMsg("jipiao_test2", "jipiao test2!");
-        producer.sendMsg("jipiao_test2", "jipiao test3!");
+        producer.sendMsg("jipiao_topic", "jipiao test1!");
+        producer.sendMsg("jipiao_topic", "jipiao test2!");
+        producer.sendMsg("jipiao_topic", "jipiao test3!");
     }
 }

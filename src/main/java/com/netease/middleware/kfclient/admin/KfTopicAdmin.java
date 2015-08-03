@@ -75,10 +75,10 @@ public class KfTopicAdmin implements IKfTopicAdmin{
     }
 
     public static void main(String[] args) {
-        KfTopicAdmin admin = new KfTopicAdmin("181.92.243.114", 2181);
-//        admin.deleteTopic("jipiao_test");
-        admin.createTopic("jipiao_test2", 1, 1);
+        KfTopicAdmin admin = new KfTopicAdmin("127.0.0.1", 2182);
+//        admin.deleteTopic("jipiao_topic");
+        admin.createTopic("jipiao_topic", 3, 2);
         admin.listTopics();
-        admin.describeTopic("jipiao_test2");
+//        admin.describeTopic("jipiao_test2");
     }
 }
