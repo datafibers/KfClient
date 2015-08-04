@@ -29,6 +29,7 @@ public class KfProducer {
         props.put(SERIALIZER_CLASS, DEFAULT_SERIALIZER_CLASS);
         props.put(METADATE_BROKER_LIST, "kafka.dianshang.163.com:9093,kafka.dianshang.163.com:9094,kafka.dianshang.163.com:9095");
         props.put(REQUEST_REQUIRED_ACKS, "1");
+        props.put("producer.type", "async");
         ProducerConfig producerConfig = new ProducerConfig(props);
         producer = new Producer<Integer,String>(producerConfig);
     }
