@@ -4,11 +4,6 @@ import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
 import com.netease.middleware.kfclient.Constants;
 
-/**
- * @title TopicCommand.java
- * @author bjpengpeng
- * @date 2015年7月31日
- */
 public enum KfTopicCommand {
     
     LIST_TOPIC("--list --zookeeper %s") {

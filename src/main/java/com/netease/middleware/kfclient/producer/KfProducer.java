@@ -15,11 +15,6 @@ import kafka.producer.ProducerConfig;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 
-/**
- * @title KfProducer.java
- * @author bjpengpeng
- * @date 2015年7月27日
- */
 public class KfProducer {
     
     private Producer<Integer, String> producer = null;
@@ -27,7 +22,7 @@ public class KfProducer {
     
     public KfProducer() {
         props.put(SERIALIZER_CLASS, DEFAULT_SERIALIZER_CLASS);
-        props.put(METADATE_BROKER_LIST, "kafka.dianshang.163.com:9093,kafka.dianshang.163.com:9094,kafka.dianshang.163.com:9095");
+        props.put(METADATE_BROKER_LIST, "*****");
         props.put(REQUEST_REQUIRED_ACKS, "1");
         props.put("producer.type", "async");
         ProducerConfig producerConfig = new ProducerConfig(props);

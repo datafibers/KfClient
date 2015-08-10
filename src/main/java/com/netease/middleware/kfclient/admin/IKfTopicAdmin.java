@@ -1,8 +1,5 @@
 package com.netease.middleware.kfclient.admin;
 
-/**
- * @author bjpengpeng
- */
 public interface IKfTopicAdmin {
     
     /**

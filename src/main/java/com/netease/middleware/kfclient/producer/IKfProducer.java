@@ -2,11 +2,6 @@ package com.netease.middleware.kfclient.producer;
 
 import java.util.List;
 
-/**
- * @title IProducer.java
- * @author bjpengpeng
- * @date 2015年7月28日
- */
 public interface IKfProducer {
     
     /**

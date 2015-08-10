@@ -1,10 +1,5 @@
 package com.netease.middleware.kfclient.producer;
 
-/**
- * @title Constants.java
- * @author bjpengpeng
- * @date 2015年7月31日
- */
 public class Constants {
     public static final String SERIALIZER_CLASS = "serializer.class";
     public static final String DEFAULT_SERIALIZER_CLASS = "kafka.serializer.StringEncoder";

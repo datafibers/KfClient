@@ -4,11 +4,6 @@ import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
 import com.netease.middleware.kfclient.Constants;
 
-/**
- * @title KfTopicAdmin.java
- * @author bjpengpeng
- * @date 2015年7月31日
- */
 public class KfTopicAdmin implements IKfTopicAdmin{
     
     private String zookeeperHost = Constants.EMPTY_STRING;

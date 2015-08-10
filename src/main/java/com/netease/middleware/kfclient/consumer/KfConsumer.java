@@ -12,18 +12,13 @@ import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 import kafka.message.MessageAndMetadata;
 
-/**
- * @title KfConsumer.java
- * @author bjpengpeng
- * @date 2015年7月28日
- */
 public class KfConsumer implements IKfConsumer{
     
     private ConsumerConnector consumer = null;
     
     private ConsumerConfig initConsumerConfig() {
         Properties props = new Properties();
-        props.put("zookeeper.connect", "127.0.0.1:2182");
+        props.put("zookeeper.connect", "*****");
         props.put("group.id", "jipiao_test");
         props.put("zookeeper.session.timeout.ms", "400");
         props.put("zookeeper.sync.time.ms", "200");
