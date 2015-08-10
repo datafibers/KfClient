@@ -1,4 +1,4 @@
-package com.netease.middleware.kfclient;
+package com.bjp.middleware.kfclient;
 
 public class Constants {
     

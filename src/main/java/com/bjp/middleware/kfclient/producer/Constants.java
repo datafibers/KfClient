@@ -1,4 +1,4 @@
-package com.netease.middleware.kfclient.producer;
+package com.bjp.middleware.kfclient.producer;
 
 public class Constants {
     public static final String SERIALIZER_CLASS = "serializer.class";

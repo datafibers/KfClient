@@ -1,4 +1,4 @@
-package com.netease.middleware.kfclient.admin;
+package com.bjp.middleware.kfclient.admin;
 
 public interface IKfTopicAdmin {
     

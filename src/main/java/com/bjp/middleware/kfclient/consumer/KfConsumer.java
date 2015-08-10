@@ -1,4 +1,4 @@
-package com.netease.middleware.kfclient.consumer;
+package com.bjp.middleware.kfclient.consumer;
 
 import java.util.List;
 import java.util.Map;

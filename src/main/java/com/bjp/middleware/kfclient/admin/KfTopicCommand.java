@@ -1,8 +1,9 @@
-package com.netease.middleware.kfclient.admin;
+package com.bjp.middleware.kfclient.admin;
 import kafka.admin.TopicCommand;
+
+import com.bjp.middleware.kfclient.Constants;
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
-import com.netease.middleware.kfclient.Constants;
 
 public enum KfTopicCommand {
     

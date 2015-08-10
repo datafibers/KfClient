@@ -1,9 +1,9 @@
-package com.netease.middleware.kfclient.producer;
+package com.bjp.middleware.kfclient.producer;
 
-import static com.netease.middleware.kfclient.producer.Constants.DEFAULT_SERIALIZER_CLASS;
-import static com.netease.middleware.kfclient.producer.Constants.METADATE_BROKER_LIST;
-import static com.netease.middleware.kfclient.producer.Constants.REQUEST_REQUIRED_ACKS;
-import static com.netease.middleware.kfclient.producer.Constants.SERIALIZER_CLASS;
+import static com.bjp.middleware.kfclient.producer.Constants.DEFAULT_SERIALIZER_CLASS;
+import static com.bjp.middleware.kfclient.producer.Constants.METADATE_BROKER_LIST;
+import static com.bjp.middleware.kfclient.producer.Constants.REQUEST_REQUIRED_ACKS;
+import static com.bjp.middleware.kfclient.producer.Constants.SERIALIZER_CLASS;
 
 import java.util.List;
 import java.util.Properties;

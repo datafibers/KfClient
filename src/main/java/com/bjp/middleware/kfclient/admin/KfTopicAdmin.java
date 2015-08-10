@@ -1,8 +1,8 @@
-package com.netease.middleware.kfclient.admin;
+package com.bjp.middleware.kfclient.admin;
 
+import com.bjp.middleware.kfclient.Constants;
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
-import com.netease.middleware.kfclient.Constants;
 
 public class KfTopicAdmin implements IKfTopicAdmin{
     

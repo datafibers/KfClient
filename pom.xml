@@ -4,20 +4,13 @@
     
     <!-- 连接Kafka的KfClient端  -->
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.netease</groupId>
+    <groupId>com.bjp.middleware</groupId>
     <artifactId>kfclient</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
     <name>kfclient</name>
     <description>kafka client - kfclient</description>
     
-    <developers>
-        <developer>
-            <email>bjpengpeng@corp.netease.com</email>
-            <name>bjpengpeng</name>
-        </developer>
-    </developers>
-
     <properties>
         <junit.version>4.11</junit.version>
         <guava.version>18.0</guava.version>

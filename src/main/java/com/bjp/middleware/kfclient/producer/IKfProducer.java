@@ -1,4 +1,4 @@
-package com.netease.middleware.kfclient.producer;
+package com.bjp.middleware.kfclient.producer;
 
 import java.util.List;
 
